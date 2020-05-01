@@ -1,0 +1,870 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+    <title>Facebuko</title>
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20120925183225cs_/http://facebuko.com/wp-content/themes/smells-like-facebook/style.css" />
+
+    <link rel="stylesheet" id="slf_sidebarad-css" href="https://web.archive.org/web/20120925183225cs_/http://facebuko.com/wp-content/themes/smells-like-facebook/sidebarad.css?ver=3.2.1" type="text/css" media="all" />
+    <link rel="stylesheet" id="sociable3-css" href="https://web.archive.org/web/20120925183225cs_/http://facebuko.com/wp-content/plugins/sociable-30/sociable.css?ver=5.13" type="text/css" media="all" />
+
+    <style type="text/css">
+        /*
+        * WP Likes CSS
+        */
+        .wp_likes {
+            background: #ECEFF5 url(https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/fan.gif) no-repeat scroll 7px 7px;
+            float: left;
+            clear: both;
+            padding: 7px;
+            margin: 2px 0px 0px 0px;
+            width: 360px;
+        }
+
+            .wp_likes div.text {
+                float: left;
+                margin-left: 18px;
+                display: inline;
+            }
+
+            .wp_likes a.like {
+                padding-left: 20px;
+                background-repeat: no-repeat;
+                background-position: left;
+            }
+
+            .wp_likes a.unlike {
+                padding-left: 2px;
+                background-image: none;
+                display: inline;
+            }
+
+            .wp_likes img.loader {
+                display: none;
+            }
+        /*sidebar widget css*/
+        .wp_likes_widget div img {
+            border: 0px;
+            margin-left: 15px;
+            margin-right: 3px;
+            width: 10px;
+            vertical-align: middle;
+        }
+
+        .wp_likes_widget div span {
+            font-weight: bold;
+        }
+    </style>
+
+
+    <style type="text/css">
+        .wpa_container {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Sans-serif;
+            line-height: 1;
+            text-align: left;
+        }
+
+            .wpa_container a {
+                text-decoration: none;
+                color: #5C75AA;
+            }
+
+                .wpa_container a:hover {
+                    color: #02f;
+                }
+
+        .wpa_clear {
+            clear: both;
+        }
+
+        .wpa_play {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 16px;
+            height: 15px;
+            margin-top: 2px;
+            background: #777 url(https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/wpaudio-mp3-player/wpa_button.gif) 0px 0px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .wpa_meta, .wpa_bar, .wpa_sub {
+            margin-left: 20px;
+        }
+
+        .wpa_meta {
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 18px;
+            color: inherit;
+        }
+
+        .wpa_placeholder {
+            font-size: 11px;
+            font-weight: normal;
+            letter-spacing: 0;
+        }
+
+        .wpa_bar {
+            display: none;
+            position: relative;
+            height: 5px;
+            margin-top: 2px;
+            background: #eee;
+            overflow: hidden;
+        }
+
+        .wpa_bar_load {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 5px;
+            z-index: 10;
+            background: #ccc;
+        }
+
+        .wpa_bar_position {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 5px;
+            z-index: 11;
+            background: #46f;
+        }
+
+        .wpa_bar_click {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            z-index: 12;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .wpa_sub {
+            display: none;
+            margin-top: 2px;
+            font-size: 11px;
+            color: #999;
+        }
+
+        .wpa_time {
+            float: left;
+        }
+
+        .wpa_download {
+            float: right;
+        }
+    </style>
+
+    <link rel="alternate" type="application/rss+xml" href="https://web.archive.org/web/20120925183225/http://facebuko.com/feed/" title="Facebuko latest posts" />
+    <link rel="alternate" type="application/rss+xml" href="https://web.archive.org/web/20120925183225/http://facebuko.com/comments/feed/" title="Facebuko latest comments" />
+    <link rel="pingback" href="http://facebuko.com/xmlrpc.php" />
+    <link rel="shortcut icon" href="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/favicon.ico" />
+</head>
+
+<body>
+
+    <div class="one">
+        <div id="wrapper">
+            <div id="header">
+                <div id="menu">
+
+                    <div id="top">
+                        <div id="thetitle">
+                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/"><img id="logo" src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/facebuko-logo.jpg" alt="Facebuko" /></a>
+                        </div>
+                        <div id="thelinks">
+                            <ul id="pagemenu">
+                                <li class="icons"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/friends.png" /></a></li>
+                                <li class="icons"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/notes"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/about.png" /></a></li>
+                                <li class="icons"><a href="https://web.archive.org/web/20120925183225/http://feeds.feedburner.com/Facebuko"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/feed.png" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="searchy">
+                        <div id="thebox">
+                            <span id="searchbar">
+                                <form action="https://web.archive.org/web/20120925183225/http://facebuko.com/" method="get">
+                                    <input name="s" onfocus="this.value=''" type="text" value="Search" />
+                                    <button type="submit" title="Search"></button>
+                                </form>
+                            </span>
+                        </div>
+                        <div id="more">
+                            <ul id="moremenu">
+                                <li><strong><a href="#" onclick="return false">Home</a></strong></li>
+                                <li><strong><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/wp-admin/">Profile</a></strong></li>
+                                <li>
+                                    <strong><a href="#" onclick="return false">Account &nbsp;&#9660;</a></strong>
+                                    <ul id="feedmenu">
+                                        <li class="feedli"><a href="https://web.archive.org/web/20120925183225/http://www.facebook.com/pages/the-jonas-roque-of-facebukocom/331622638959">Facebook</a></li>
+                                        <li class="feedli"><a href="https://web.archive.org/web/20120925183225/http://twitter.com/orasid">Twitter</a></li>
+                                        <li class="feedli"><a href="https://web.archive.org/web/20120925183225/http://plurk.com/orasid">Plurk</a></li>
+                                        <li class="feedli"><a href="https://web.archive.org/web/20120925183225/http://pinoypickuplines.tumblr.com/">Tumblr</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="container">
+                <!--<img src="http://facebuko.com/wp-content/themes/smells-like-facebook/leaderboard.jpg" /><br />-->
+                <div id="sidebar">
+                    <ul>
+
+                        <li class="large-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/facebuko.jpg" width="180px;" /></li>
+
+
+                        <li class="naviside">
+                            <h2 class=" widgetselect"><a class=" widgetitemselect" href="https://web.archive.org/web/20120925183225/http://facebuko.com/"><span class="naviimage"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/newsfeed.png" /></span> <span class="navititle">News Feed</span></a></h2>
+                            <h2 class="widgetnoselect"><a class="widgetitem" href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/facebuko"><span class="naviimage"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/wallicon.png" /></span> <span class="navititle">Timeline</span></a></h2>
+                            <h2 class="widgetnoselect"><a class="widgetitem" href="https://web.archive.org/web/20120925183225/http://twitter.com/facebuko"><span class="naviimage"><img width="16px" src="https://web.archive.org/web/20120925183225im_/http://timeline.facebuko.com/wp-content/themes/timeline/images/social-icons/twitter.gif" /></span> <span class="navititle">Daily Tweets</span></a></h2>
+                            <h2 class=" widgetnoselect"><a class=" widgetitem" href="https://web.archive.org/web/20120925183225/http://facebuko.com/notes"><span class="naviimage"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/notesicon.png" /></span> <span class="navititle">Notes</span></a></h2>
+                            <h2 class=" widgetnoselect"><a class=" widgetitem" href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends"><span class="naviimage"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/friends.png" /></span> <span class="navititle">Friends</span></a></h2>
+                        </li>
+
+                        <li class="widget">
+                            <h2 class="widgetfriend"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends">Friends (700)</a></h2>
+                            <div id="friends1">
+                                <div class="friendlist">
+                                    <div class="picpic">
+                                        <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/franklin-drilon/" title="">
+                                            <img class="avatarpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/franklindrilon.jpg" alt="Franklin Drilon" />
+                                        </a>
+                                    </div>
+                                    <div class="avatarinfo">
+                                        <p>
+                                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/franklin-drilon/" title="">Franklin Drilon</a>
+                                        </p>
+                                    </div>
+                                    <div class="cleaner">&nbsp;</div>
+                                </div><div class="friendlist">
+                                    <div class="picpic">
+                                        <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/juan-ponce-enrile/" title="">
+                                            <img class="avatarpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/juanponceenrile.jpg" alt="Juan Ponce Enrile" />
+                                        </a>
+                                    </div>
+                                    <div class="avatarinfo">
+                                        <p>
+                                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/juan-ponce-enrile/" title="">Juan Ponce Enrile</a>
+                                        </p>
+                                    </div>
+                                    <div class="cleaner">&nbsp;</div>
+                                </div><div class="friendlist">
+                                    <div class="picpic">
+                                        <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/renato-corona/" title="">
+                                            <img class="avatarpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/renatocorona.jpg" alt="Renato Corona" />
+                                        </a>
+                                    </div>
+                                    <div class="avatarinfo">
+                                        <p>
+                                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/renato-corona/" title="">Renato Corona</a>
+                                        </p>
+                                    </div>
+                                    <div class="cleaner">&nbsp;</div>
+                                </div><div class="friendlist">
+                                    <div class="picpic">
+                                        <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/takeshi-goda/" title="">
+                                            <img class="avatarpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/takeshigoda.jpg" alt="Takeshi Goda" />
+                                        </a>
+                                    </div>
+                                    <div class="avatarinfo">
+                                        <p>
+                                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/takeshi-goda/" title="">Takeshi Goda</a>
+                                        </p>
+                                    </div>
+                                    <div class="cleaner">&nbsp;</div>
+                                </div><div class="friendlist">
+                                    <div class="picpic">
+                                        <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/sakamoto-kanta/" title="">
+                                            <img class="avatarpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/sakamotokanta.jpg" alt="Sakamoto Kanta" />
+                                        </a>
+                                    </div>
+                                    <div class="avatarinfo">
+                                        <p>
+                                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/sakamoto-kanta/" title="">Sakamoto Kanta</a>
+                                        </p>
+                                    </div>
+                                    <div class="cleaner">&nbsp;</div>
+                                </div><div class="friendlist">
+                                    <div class="picpic">
+                                        <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/leonor-rivera/" title="">
+                                            <img class="avatarpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/leonorrivera.jpg" alt="Leonor Rivera" />
+                                        </a>
+                                    </div>
+                                    <div class="avatarinfo">
+                                        <p>
+                                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/leonor-rivera/" title="">Leonor Rivera</a>
+                                        </p>
+                                    </div>
+                                    <div class="cleaner">&nbsp;</div>
+                                </div><div class="friendlist">
+                                    <div class="picpic">
+                                        <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/bea-benene/" title="">
+                                            <img class="avatarpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/beabenene.jpg" alt="Bea Benene" />
+                                        </a>
+                                    </div>
+                                    <div class="avatarinfo">
+                                        <p>
+                                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/bea-benene/" title="">Bea Benene</a>
+                                        </p>
+                                    </div>
+                                    <div class="cleaner">&nbsp;</div>
+                                </div><div class="friendlist">
+                                    <div class="picpic">
+                                        <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/miles-ocampo/" title="">
+                                            <img class="avatarpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/milesocampo.jpg" alt="Miles Ocampo" />
+                                        </a>
+                                    </div>
+                                    <div class="avatarinfo">
+                                        <p>
+                                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/miles-ocampo/" title="">Miles Ocampo</a>
+                                        </p>
+                                    </div>
+                                    <div class="cleaner">&nbsp;</div>
+                                </div><div class="friendlist">
+                                    <div class="picpic">
+                                        <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/marco-gumabao/" title="">
+                                            <img class="avatarpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/marcogumabao.jpg" alt="Marco Gumabao" />
+                                        </a>
+                                    </div>
+                                    <div class="avatarinfo">
+                                        <p>
+                                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/marco-gumabao/" title="">Marco Gumabao</a>
+                                        </p>
+                                    </div>
+                                    <div class="cleaner">&nbsp;</div>
+                                </div><div class="friendlist">
+                                    <div class="picpic">
+                                        <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/nurse-joy/" title="">
+                                            <img class="avatarpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/nursejoy.jpg" alt="Nurse Joy" />
+                                        </a>
+                                    </div>
+                                    <div class="avatarinfo">
+                                        <p>
+                                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/nurse-joy/" title="">Nurse Joy</a>
+                                        </p>
+                                    </div>
+                                    <div class="cleaner">&nbsp;</div>
+                                </div><div class="friendlist">
+                                    <div class="picpic">
+                                        <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/faye-kabisote/" title="">
+                                            <img class="avatarpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/fayekabisote.jpg" alt="Faye Kabisote" />
+                                        </a>
+                                    </div>
+                                    <div class="avatarinfo">
+                                        <p>
+                                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/faye-kabisote/" title="">Faye Kabisote</a>
+                                        </p>
+                                    </div>
+                                    <div class="cleaner">&nbsp;</div>
+                                </div><div class="friendlist">
+                                    <div class="picpic">
+                                        <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/enteng-kabisote/" title="">
+                                            <img class="avatarpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/entengkabisote.jpg" alt="Enteng Kabisote" />
+                                        </a>
+                                    </div>
+                                    <div class="avatarinfo">
+                                        <p>
+                                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/enteng-kabisote/" title="">Enteng Kabisote</a>
+                                        </p>
+                                    </div>
+                                    <div class="cleaner">&nbsp;</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="content">
+
+                    <div id="main">
+
+                        <div id="title">
+                            <span class="profilename">Facebuko</span>
+
+                            <div class="byline">
+                                <span class="bylinefragment"><i class="profiledetails work"></i>Works at <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/">Central Intelligence Agency</a></span> <span class="bylinefragment"><i class="profiledetails school"></i>Studying MA Witchcraft and Wizardry with Computer Science at <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/">Hogwarts</a></span> <span class="bylinefragment"><i class="profiledetails lives"></i>Lives in <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/">a pineapple under the sea</a></span> <span class="bylinefragment"><i class="profiledetails love"></i>In a bad romance with <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/">Facebook</a></span>  <span class="bylinefragment"><i class="profiledetails language"></i>Knows Jejemon, Bekimon, Frurent Engrish</span> <span class="bylinefragment"><i class="profiledetails home"></i>From <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/">127.0.0.1, Port 8080</a></span> <span class="bylinefragment"><i class="profiledetails birthday"></i>Born on July 13, 2009</span>
+                            </div>
+                            <!--<div id="desc">Submit your jokes at <a href="http://facebuko.tumblr.com">The Sosyal Network</a>.</div>-->
+                        </div>
+
+                        <div id="featurebanner">
+                            <a href="https://web.archive.org/web/20120925183225/http://twitter.com/facebuko"><img class="bannerpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/social_twitter.jpg" /></a>
+                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.tumblr.com/"><img class="bannerpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/social_tumblr.jpg" /></a>
+                            <a href="https://web.archive.org/web/20120925183225/http://followgram.me/facebuko"><img class="bannerpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/social_instagram.jpg" /></a>
+                            <a href="https://web.archive.org/web/20120925183225/http://facebuko.jux.com/"><img class="bannerpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/social_jux.jpg" /></a>
+                            <a href="https://web.archive.org/web/20120925183225/http://facebook.com/thefacebuko"><img class="bannerpic" src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/themes/smells-like-facebook/social_facebook.jpg" /></a>
+                        </div>
+                        <div id="post-container">
+                            <div id="posts">
+                                <div class="post-list">
+
+
+                                    <object data="html/stuff_to_include.html">
+                                        Your browser doesn’t support the object tag.
+                                    </object>
+
+
+
+                                    <div class="post" id="post-4468">
+                                        <div class="post-gravatar">
+                                            <img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/marcogumabao.jpg" alt="Marco Gumabao" />
+                                        </div>
+                                        <div class="post-text">
+                                            <p class="status">
+                                                <b><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/marco-gumabao">Marco Gumabao</a></b> <img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/extras/to.png" /> <b><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/miles-ocampo">Miles Ocampo</a></b> Pag sumama ka sa MATALINO, magiging MATALINO ka. Pag sumama ka sa ADIK, magiging ADIK ka. Try mong sumama sa AKIN, at magiging AKIN ka.
+                                            </p>
+                                            <div id="responses">
+                                                <div id="responselist">
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/milesocampo.jpg" alt="Miles Ocampo" title="Miles Ocampo" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/miles-ocampo">Miles Ocampo</a></div>
+                                                            <div class="rc-content"> Naman.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/igiboyflores.jpg" alt="Igi Boy Flores" title="Igi Boy Flores" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/igi-boy-flores">Igi Boy Flores</a></div>
+                                                            <div class="rc-content"> Try mong sumama kay <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/miles-ocampo">@Kiray Celis</a>, mas GAGANDA ka.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wp_likes" id="wp_likes_post-4468">
+                                                <div class="text"><b>342</b> fans like this post.</div>
+                                                <div><a href=" javascript:wp_likes.like(4468)" class="like" title="like this post">Fan This!</a>&nbsp;<img class="loader" src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/wp-likes/images/spinner.gif" height="11px" alt="" /></div>
+                                            </div>
+                                            <div class="sociable"><span class="sociable-tagline">Share to the World:</span><ul><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.facebook.com/share.php?u=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fsumama-ka%2F&amp;t=Sumama%20Ka"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/facebook.png" class="sociable-img" title="Facebook" alt="Facebook" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://twitter.com/home?status=Sumama%20Ka%20-%20http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fsumama-ka%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/twitter.png" class="sociable-img" title="Twitter" alt="Twitter" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fsumama-ka%2F&amp;t=Sumama%20Ka&amp;s=Marco%20Gumabao%20%20Miles%20Ocampo%20Pag%20sumama%20ka%20sa%20MATALINO%2C%20magiging%20MATALINO%20ka.%20Pag%20sumama%20ka%20sa%20ADIK%2C%20magiging%20ADIK%20ka.%20Try%20mong%20sumama%20sa%20AKIN%2C%20at%20magiging%20AKIN%20ka.%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMiles%20Ocampo%0D%0A%20Naman.%0D%0A%0D%0A%0D%0A%0D%0AIgi%20Boy%20Flores%0D%0A%20Try%20mong%20sumama%20kay%20%40Kiray%20"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/tumblr.png" class="sociable-img" title="Tumblr" alt="Tumblr" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.plurk.com/m?content=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fsumama-ka%2F (Sumama%20Ka)&amp;qualifier=shares"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/plurk.png" class="sociable-img" title="Plurk" alt="Plurk" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://ping.fm/ref/?link=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fsumama-ka%2F&amp;title=Sumama%20Ka&amp;body=Marco%20Gumabao%20%20Miles%20Ocampo%20Pag%20sumama%20ka%20sa%20MATALINO%2C%20magiging%20MATALINO%20ka.%20Pag%20sumama%20ka%20sa%20ADIK%2C%20magiging%20ADIK%20ka.%20Try%20mong%20sumama%20sa%20AKIN%2C%20at%20magiging%20AKIN%20ka.%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMiles%20Ocampo%0D%0A%20Naman.%0D%0A%0D%0A%0D%0A%0D%0AIgi%20Boy%20Flores%0D%0A%20Try%20mong%20sumama%20kay%20%40Kiray%20"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/ping.png" class="sociable-img" title="Ping.fm" alt="Ping.fm" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.friendfeed.com/share?title=Sumama%20Ka&amp;link=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fsumama-ka%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/friendfeed.png" class="sociable-img" title="FriendFeed" alt="FriendFeed" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://posterous.com/share?linkto=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fsumama-ka%2F&amp;title=Sumama%20Ka&amp;selection=Marco%20Gumabao%20%20Miles%20Ocampo%20Pag%20sumama%20ka%20sa%20MATALINO%2C%20magiging%20MATALINO%20ka.%20Pag%20sumama%20ka%20sa%20ADIK%2C%20magiging%20ADIK%20ka.%20Try%20mong%20sumama%20sa%20AKIN%2C%20at%20magiging%20AKIN%20ka.%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMiles%20Ocampo%0D%0A%20Naman.%0D%0A%0D%0A%0D%0A%0D%0AIgi%20Boy%20Flores%0D%0A%20Try%20mong%20sumama%20kay%20%40Kiray%20"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/posterous.png" class="sociable-img" title="Posterous" alt="Posterous" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fsumama-ka%2F&amp;title=Sumama%20Ka&amp;annotation=Marco%20Gumabao%20%20Miles%20Ocampo%20Pag%20sumama%20ka%20sa%20MATALINO%2C%20magiging%20MATALINO%20ka.%20Pag%20sumama%20ka%20sa%20ADIK%2C%20magiging%20ADIK%20ka.%20Try%20mong%20sumama%20sa%20AKIN%2C%20at%20magiging%20AKIN%20ka.%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMiles%20Ocampo%0D%0A%20Naman.%0D%0A%0D%0A%0D%0A%0D%0AIgi%20Boy%20Flores%0D%0A%20Try%20mong%20sumama%20kay%20%40Kiray%20"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/googlebookmark.png" class="sociable-img" title="Google Bookmarks" alt="Google Bookmarks" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/mailto:/?subject=Sumama%20Ka&amp;body=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fsumama-ka%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/email_link.png" class="sociable-img" title="email" alt="email" /></a></li></ul></div>			<div class="meta">
+                                                <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/2012/04/08/sumama-ka/" class="perm" rel="bookmark">Sumama Ka</a> &#183;
+                                                8 April 2012 &#183;
+                                                <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/2012/04/08/sumama-ka/#respond" class="respondlink notajax" id="respondlink-4468">Comments</a>
+                                            </div>
+                                            <div class="commentcontainer">
+                                            </div>
+
+                                            <div class="index-comment"><textarea class="respondtext">Write a comment...</textarea></div>
+                                            <div id="commentform-4468" class="index-comment comment-form" style="display:none;">
+                                                <form action="https://web.archive.org/web/20120925183225/http://facebuko.com/wp-comments-post.php" method="post">
+                                                    <div class="form_input">
+                                                        <input class="author focus" name="author" type="text" />
+                                                        <label for="author">Name</label>
+                                                    </div>
+                                                    <div class="form_input">
+                                                        <input class="email" name="email" type="text" />
+                                                        <label for="email">Email (<a href="https://web.archive.org/web/20120925183225/http://en.gravatar.com/">Gravatar</a> enabled)</label>
+                                                    </div>
+                                                    <div class="form_input">
+                                                        <input class="url" name="url" type="text" />
+                                                        <label for="url">Website</label>
+                                                    </div>
+                                                    <div class="form_comment">
+                                                        <textarea name="comment" class="focus "></textarea>
+                                                    </div>
+                                                    <div class="form_submit">
+                                                        <input type="submit" name="submit" value="Comment" class="submit" />
+                                                    </div>
+                                                    <input type="hidden" name="comment_post_ID" value="4468" />
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="post" id="post-4465">
+                                        <div class="post-gravatar">
+                                            <img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/chachabulilit.jpg" alt="Chacha Bulilit" />
+                                        </div>
+                                        <div class="post-text">
+                                            <p class="status"><b><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/chacha-bulilit">Chacha Bulilit</a></b> <img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/extras/to.png" /> <b><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/miguel-de-guzman">Miguel De Guzman</a></b> Aray! Nahulog ako!</p>
+                                            <div id="responses">
+                                                <div id="responselist">
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/migueldeguzman.jpg" alt="Miguel De Guzman" title="Miguel De Guzman" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/miguel-de-guzman">Miguel De Guzman</a></div>
+                                                            <div class="rc-content"> Saan?</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/chachabulilit.jpg" alt="Chacha Bulilit" title="Chacha Bulilit" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/chacha-bulilit">Chacha Bulilit</a></div>
+                                                            <div class="rc-content"> Sa &#8216;yo. </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/migueldeguzman.jpg" alt="Miguel De Guzman" title="Miguel De Guzman" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/miguel-de-guzman">Miguel De Guzman</a></div>
+                                                            <div class="rc-content"> Weh? Bakit ako? Di ko kayang mahulog sa iyo?</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/chachabulilit.jpg" alt="Chacha Bulilit" title="Chacha Bulilit" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/chacha-bulilit">Chacha Bulilit</a></div>
+                                                            <div class="rc-content"> Bakit naman? </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/migueldeguzman.jpg" alt="Miguel De Guzman" title="Miguel De Guzman" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/miguel-de-guzman">Miguel De Guzman</a></div>
+                                                            <div class="rc-content"> Kasi sa bawat segundong kasama kita, LUMULUTANG ako&#8230;</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wp_likes" id="wp_likes_post-4465">
+                                                <div class="text"><b>155</b> fans like this post.</div>
+                                                <div><a href=" javascript:wp_likes.like(4465)" class="like" title="like this post">Fan This!</a>&nbsp;<img class="loader" src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/wp-likes/images/spinner.gif" height="11px" alt="" /></div>
+                                            </div>
+                                            <div class="sociable"><span class="sociable-tagline">Share to the World:</span><ul><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.facebook.com/share.php?u=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fhulog-at-lutang%2F&amp;t=Hulog%20at%20Lutang"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/facebook.png" class="sociable-img" title="Facebook" alt="Facebook" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://twitter.com/home?status=Hulog%20at%20Lutang%20-%20http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fhulog-at-lutang%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/twitter.png" class="sociable-img" title="Twitter" alt="Twitter" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fhulog-at-lutang%2F&amp;t=Hulog%20at%20Lutang&amp;s=Chacha%20Bulilit%20%20Miguel%20De%20Guzman%20Aray%21%20Nahulog%20ako%21%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Saan%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D%0A%20Sa%20%27yo.%20%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Weh%3F%20Bakit%20ako%3F%20Di%20ko%20kayang%20mahulog%20sa%20iyo%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D%0A%20Bakit%20naman%3F%20%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guz"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/tumblr.png" class="sociable-img" title="Tumblr" alt="Tumblr" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.plurk.com/m?content=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fhulog-at-lutang%2F (Hulog%20at%20Lutang)&amp;qualifier=shares"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/plurk.png" class="sociable-img" title="Plurk" alt="Plurk" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://ping.fm/ref/?link=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fhulog-at-lutang%2F&amp;title=Hulog%20at%20Lutang&amp;body=Chacha%20Bulilit%20%20Miguel%20De%20Guzman%20Aray%21%20Nahulog%20ako%21%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Saan%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D%0A%20Sa%20%27yo.%20%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Weh%3F%20Bakit%20ako%3F%20Di%20ko%20kayang%20mahulog%20sa%20iyo%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D%0A%20Bakit%20naman%3F%20%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guz"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/ping.png" class="sociable-img" title="Ping.fm" alt="Ping.fm" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.friendfeed.com/share?title=Hulog%20at%20Lutang&amp;link=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fhulog-at-lutang%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/friendfeed.png" class="sociable-img" title="FriendFeed" alt="FriendFeed" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://posterous.com/share?linkto=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fhulog-at-lutang%2F&amp;title=Hulog%20at%20Lutang&amp;selection=Chacha%20Bulilit%20%20Miguel%20De%20Guzman%20Aray%21%20Nahulog%20ako%21%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Saan%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D%0A%20Sa%20%27yo.%20%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Weh%3F%20Bakit%20ako%3F%20Di%20ko%20kayang%20mahulog%20sa%20iyo%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D%0A%20Bakit%20naman%3F%20%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guz"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/posterous.png" class="sociable-img" title="Posterous" alt="Posterous" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fhulog-at-lutang%2F&amp;title=Hulog%20at%20Lutang&amp;annotation=Chacha%20Bulilit%20%20Miguel%20De%20Guzman%20Aray%21%20Nahulog%20ako%21%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Saan%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D%0A%20Sa%20%27yo.%20%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Weh%3F%20Bakit%20ako%3F%20Di%20ko%20kayang%20mahulog%20sa%20iyo%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D%0A%20Bakit%20naman%3F%20%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guz"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/googlebookmark.png" class="sociable-img" title="Google Bookmarks" alt="Google Bookmarks" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/mailto:/?subject=Hulog%20at%20Lutang&amp;body=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fhulog-at-lutang%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/email_link.png" class="sociable-img" title="email" alt="email" /></a></li></ul></div>			<div class="meta">
+                                                <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/2012/04/08/hulog-at-lutang/" class="perm" rel="bookmark">Hulog at Lutang</a> &#183;
+                                                8 April 2012 &#183;
+                                                <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/2012/04/08/hulog-at-lutang/#respond" class="respondlink notajax" id="respondlink-4465">Comments</a>
+                                            </div>
+                                            <div class="commentcontainer">
+                                            </div>
+
+                                            <div class="index-comment"><textarea class="respondtext">Write a comment...</textarea></div>
+                                            <div id="commentform-4465" class="index-comment comment-form" style="display:none;">
+                                                <form action="https://web.archive.org/web/20120925183225/http://facebuko.com/wp-comments-post.php" method="post">
+                                                    <div class="form_input">
+                                                        <input class="author focus" name="author" type="text" />
+                                                        <label for="author">Name</label>
+                                                    </div>
+                                                    <div class="form_input">
+                                                        <input class="email" name="email" type="text" />
+                                                        <label for="email">Email (<a href="https://web.archive.org/web/20120925183225/http://en.gravatar.com/">Gravatar</a> enabled)</label>
+                                                    </div>
+                                                    <div class="form_input">
+                                                        <input class="url" name="url" type="text" />
+                                                        <label for="url">Website</label>
+                                                    </div>
+                                                    <div class="form_comment">
+                                                        <textarea name="comment" class="focus "></textarea>
+                                                    </div>
+                                                    <div class="form_submit">
+                                                        <input type="submit" name="submit" value="Comment" class="submit" />
+                                                    </div>
+                                                    <input type="hidden" name="comment_post_ID" value="4465" />
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="post" id="post-4462">
+                                        <div class="post-gravatar">
+                                            <img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/ashketchum.jpg" alt="Ash Ketchum" />
+                                        </div>
+                                        <div class="post-text">
+                                            <p class="status"><b><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/ash-ketchum">Ash Ketchum</a></b> <img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/extras/to.png" /> <b><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/nurse-joy">Nurse Joy</a></b> Samahan mo nga ako sa HOSPITAL.</p>
+                                            <div id="responses">
+                                                <div id="responselist">
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/nursejoy.jpg" alt="Nurse Joy" title="Nurse Joy" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/nurse-joy">Nurse Joy</a></div>
+                                                            <div class="rc-content"> Bakit?</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/ashketchum.jpg" alt="Ash Ketchum" title="Ash Ketchum" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/ash-ketchum">Ash Ketchum</a></div>
+                                                            <div class="rc-content"> Ang dami ko na kasing NARARAMDAMAN PARA SA IYO.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wp_likes" id="wp_likes_post-4462">
+                                                <div class="text"><b>138</b> fans like this post.</div>
+                                                <div><a href=" javascript:wp_likes.like(4462)" class="like" title="like this post">Fan This!</a>&nbsp;<img class="loader" src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/wp-likes/images/spinner.gif" height="11px" alt="" /></div>
+                                            </div>
+                                            <div class="sociable"><span class="sociable-tagline">Share to the World:</span><ul><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.facebook.com/share.php?u=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fmadaming-nararamdaman%2F&amp;t=Madaming%20Nararamdaman"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/facebook.png" class="sociable-img" title="Facebook" alt="Facebook" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://twitter.com/home?status=Madaming%20Nararamdaman%20-%20http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fmadaming-nararamdaman%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/twitter.png" class="sociable-img" title="Twitter" alt="Twitter" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fmadaming-nararamdaman%2F&amp;t=Madaming%20Nararamdaman&amp;s=Ash%20Ketchum%20%20Nurse%20Joy%20Samahan%20mo%20nga%20ako%20sa%20HOSPITAL.%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0ANurse%20Joy%0D%0A%20Bakit%3F%0D%0A%0D%0A%0D%0A%0D%0AAsh%20Ketchum%0D%0A%20Ang%20dami%20ko%20na%20kasing%20NARARAMDAMAN%20PARA%20SA%20IYO.%0D%0A%0D%0A"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/tumblr.png" class="sociable-img" title="Tumblr" alt="Tumblr" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.plurk.com/m?content=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fmadaming-nararamdaman%2F (Madaming%20Nararamdaman)&amp;qualifier=shares"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/plurk.png" class="sociable-img" title="Plurk" alt="Plurk" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://ping.fm/ref/?link=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fmadaming-nararamdaman%2F&amp;title=Madaming%20Nararamdaman&amp;body=Ash%20Ketchum%20%20Nurse%20Joy%20Samahan%20mo%20nga%20ako%20sa%20HOSPITAL.%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0ANurse%20Joy%0D%0A%20Bakit%3F%0D%0A%0D%0A%0D%0A%0D%0AAsh%20Ketchum%0D%0A%20Ang%20dami%20ko%20na%20kasing%20NARARAMDAMAN%20PARA%20SA%20IYO.%0D%0A%0D%0A"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/ping.png" class="sociable-img" title="Ping.fm" alt="Ping.fm" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.friendfeed.com/share?title=Madaming%20Nararamdaman&amp;link=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fmadaming-nararamdaman%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/friendfeed.png" class="sociable-img" title="FriendFeed" alt="FriendFeed" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://posterous.com/share?linkto=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fmadaming-nararamdaman%2F&amp;title=Madaming%20Nararamdaman&amp;selection=Ash%20Ketchum%20%20Nurse%20Joy%20Samahan%20mo%20nga%20ako%20sa%20HOSPITAL.%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0ANurse%20Joy%0D%0A%20Bakit%3F%0D%0A%0D%0A%0D%0A%0D%0AAsh%20Ketchum%0D%0A%20Ang%20dami%20ko%20na%20kasing%20NARARAMDAMAN%20PARA%20SA%20IYO.%0D%0A%0D%0A"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/posterous.png" class="sociable-img" title="Posterous" alt="Posterous" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fmadaming-nararamdaman%2F&amp;title=Madaming%20Nararamdaman&amp;annotation=Ash%20Ketchum%20%20Nurse%20Joy%20Samahan%20mo%20nga%20ako%20sa%20HOSPITAL.%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0ANurse%20Joy%0D%0A%20Bakit%3F%0D%0A%0D%0A%0D%0A%0D%0AAsh%20Ketchum%0D%0A%20Ang%20dami%20ko%20na%20kasing%20NARARAMDAMAN%20PARA%20SA%20IYO.%0D%0A%0D%0A"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/googlebookmark.png" class="sociable-img" title="Google Bookmarks" alt="Google Bookmarks" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/mailto:/?subject=Madaming%20Nararamdaman&amp;body=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fmadaming-nararamdaman%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/email_link.png" class="sociable-img" title="email" alt="email" /></a></li></ul></div>			<div class="meta">
+                                                <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/2012/04/08/madaming-nararamdaman/" class="perm" rel="bookmark">Madaming Nararamdaman</a> &#183;
+                                                8 April 2012 &#183;
+                                                <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/2012/04/08/madaming-nararamdaman/#respond" class="respondlink notajax" id="respondlink-4462">Comments</a>
+                                            </div>
+                                            <div class="commentcontainer">
+                                            </div>
+
+                                            <div class="index-comment"><textarea class="respondtext">Write a comment...</textarea></div>
+                                            <div id="commentform-4462" class="index-comment comment-form" style="display:none;">
+                                                <form action="https://web.archive.org/web/20120925183225/http://facebuko.com/wp-comments-post.php" method="post">
+                                                    <div class="form_input">
+                                                        <input class="author focus" name="author" type="text" />
+                                                        <label for="author">Name</label>
+                                                    </div>
+                                                    <div class="form_input">
+                                                        <input class="email" name="email" type="text" />
+                                                        <label for="email">Email (<a href="https://web.archive.org/web/20120925183225/http://en.gravatar.com/">Gravatar</a> enabled)</label>
+                                                    </div>
+                                                    <div class="form_input">
+                                                        <input class="url" name="url" type="text" />
+                                                        <label for="url">Website</label>
+                                                    </div>
+                                                    <div class="form_comment">
+                                                        <textarea name="comment" class="focus "></textarea>
+                                                    </div>
+                                                    <div class="form_submit">
+                                                        <input type="submit" name="submit" value="Comment" class="submit" />
+                                                    </div>
+                                                    <input type="hidden" name="comment_post_ID" value="4462" />
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="post" id="post-4459">
+                                        <div class="post-gravatar">
+                                            <img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/mikeenriquez.jpg" alt="Mike Enriquez" />
+                                        </div>
+                                        <div class="post-text">
+                                            <p class="status"><b><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/mike-enriquez">Mike Enriquez</a></b> <img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/extras/to.png" /> <b><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/mel-tiangco">Mel Tiangco</a></b> Ipapaimbestigahan ko ang mga magulang mo.</p>
+                                            <div id="responses">
+                                                <div id="responselist">
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/meltiangco.jpg" alt="Mel Tiangco" title="Mel Tiangco" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/mel-tiangco">Mel Tiangco</a></div>
+                                                            <div class="rc-content"> Bakit naman? Para saan?</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/mikeenriquez.jpg" alt="Mike Enriquez" title="Mike Enriquez" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/mike-enriquez">Mike Enriquez</a></div>
+                                                            <div class="rc-content"> Nakagawa kasi sila ng nakaka-ADIK katulad mo.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/meltiangco.jpg" alt="Mel Tiangco" title="Mel Tiangco" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/mel-tiangco">Mel Tiangco</a></div>
+                                                            <div class="rc-content"> Oh? Ang galing noh po?</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wp_likes" id="wp_likes_post-4459">
+                                                <div class="text"><b>106</b> fans like this post.</div>
+                                                <div><a href=" javascript:wp_likes.like(4459)" class="like" title="like this post">Fan This!</a>&nbsp;<img class="loader" src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/wp-likes/images/spinner.gif" height="11px" alt="" /></div>
+                                            </div>
+                                            <div class="sociable"><span class="sociable-tagline">Share to the World:</span><ul><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.facebook.com/share.php?u=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fimbestigador%2F&amp;t=Imbestigador"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/facebook.png" class="sociable-img" title="Facebook" alt="Facebook" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://twitter.com/home?status=Imbestigador%20-%20http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fimbestigador%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/twitter.png" class="sociable-img" title="Twitter" alt="Twitter" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fimbestigador%2F&amp;t=Imbestigador&amp;s=Mike%20Enriquez%20%20Mel%20Tiangco%20Ipapaimbestigahan%20ko%20ang%20mga%20magulang%20mo.%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMel%20Tiangco%0D%0A%20Bakit%20naman%3F%20Para%20saan%3F%0D%0A%0D%0A%0D%0A%0D%0AMike%20Enriquez%0D%0A%20Nakagawa%20kasi%20sila%20ng%20nakaka-ADIK%20katulad%20mo.%0D%0A%0D%0A%0D%0A%0D%0AMel%20Tiangco%0D%0A%20Oh%3F%20Ang%20galing%20noh%20po%3F%0D%0A%0D%0A"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/tumblr.png" class="sociable-img" title="Tumblr" alt="Tumblr" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.plurk.com/m?content=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fimbestigador%2F (Imbestigador)&amp;qualifier=shares"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/plurk.png" class="sociable-img" title="Plurk" alt="Plurk" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://ping.fm/ref/?link=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fimbestigador%2F&amp;title=Imbestigador&amp;body=Mike%20Enriquez%20%20Mel%20Tiangco%20Ipapaimbestigahan%20ko%20ang%20mga%20magulang%20mo.%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMel%20Tiangco%0D%0A%20Bakit%20naman%3F%20Para%20saan%3F%0D%0A%0D%0A%0D%0A%0D%0AMike%20Enriquez%0D%0A%20Nakagawa%20kasi%20sila%20ng%20nakaka-ADIK%20katulad%20mo.%0D%0A%0D%0A%0D%0A%0D%0AMel%20Tiangco%0D%0A%20Oh%3F%20Ang%20galing%20noh%20po%3F%0D%0A%0D%0A"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/ping.png" class="sociable-img" title="Ping.fm" alt="Ping.fm" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.friendfeed.com/share?title=Imbestigador&amp;link=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fimbestigador%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/friendfeed.png" class="sociable-img" title="FriendFeed" alt="FriendFeed" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://posterous.com/share?linkto=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fimbestigador%2F&amp;title=Imbestigador&amp;selection=Mike%20Enriquez%20%20Mel%20Tiangco%20Ipapaimbestigahan%20ko%20ang%20mga%20magulang%20mo.%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMel%20Tiangco%0D%0A%20Bakit%20naman%3F%20Para%20saan%3F%0D%0A%0D%0A%0D%0A%0D%0AMike%20Enriquez%0D%0A%20Nakagawa%20kasi%20sila%20ng%20nakaka-ADIK%20katulad%20mo.%0D%0A%0D%0A%0D%0A%0D%0AMel%20Tiangco%0D%0A%20Oh%3F%20Ang%20galing%20noh%20po%3F%0D%0A%0D%0A"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/posterous.png" class="sociable-img" title="Posterous" alt="Posterous" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fimbestigador%2F&amp;title=Imbestigador&amp;annotation=Mike%20Enriquez%20%20Mel%20Tiangco%20Ipapaimbestigahan%20ko%20ang%20mga%20magulang%20mo.%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMel%20Tiangco%0D%0A%20Bakit%20naman%3F%20Para%20saan%3F%0D%0A%0D%0A%0D%0A%0D%0AMike%20Enriquez%0D%0A%20Nakagawa%20kasi%20sila%20ng%20nakaka-ADIK%20katulad%20mo.%0D%0A%0D%0A%0D%0A%0D%0AMel%20Tiangco%0D%0A%20Oh%3F%20Ang%20galing%20noh%20po%3F%0D%0A%0D%0A"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/googlebookmark.png" class="sociable-img" title="Google Bookmarks" alt="Google Bookmarks" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/mailto:/?subject=Imbestigador&amp;body=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fimbestigador%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/email_link.png" class="sociable-img" title="email" alt="email" /></a></li></ul></div>			<div class="meta">
+                                                <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/2012/04/08/imbestigador/" class="perm" rel="bookmark">Imbestigador</a> &#183;
+                                                8 April 2012 &#183;
+                                                <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/2012/04/08/imbestigador/#respond" class="respondlink notajax" id="respondlink-4459">Comments</a>
+                                            </div>
+                                            <div class="commentcontainer">
+                                            </div>
+
+                                            <div class="index-comment"><textarea class="respondtext">Write a comment...</textarea></div>
+                                            <div id="commentform-4459" class="index-comment comment-form" style="display:none;">
+                                                <form action="https://web.archive.org/web/20120925183225/http://facebuko.com/wp-comments-post.php" method="post">
+                                                    <div class="form_input">
+                                                        <input class="author focus" name="author" type="text" />
+                                                        <label for="author">Name</label>
+                                                    </div>
+                                                    <div class="form_input">
+                                                        <input class="email" name="email" type="text" />
+                                                        <label for="email">Email (<a href="https://web.archive.org/web/20120925183225/http://en.gravatar.com/">Gravatar</a> enabled)</label>
+                                                    </div>
+                                                    <div class="form_input">
+                                                        <input class="url" name="url" type="text" />
+                                                        <label for="url">Website</label>
+                                                    </div>
+                                                    <div class="form_comment">
+                                                        <textarea name="comment" class="focus "></textarea>
+                                                    </div>
+                                                    <div class="form_submit">
+                                                        <input type="submit" name="submit" value="Comment" class="submit" />
+                                                    </div>
+                                                    <input type="hidden" name="comment_post_ID" value="4459" />
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="post" id="post-4456">
+                                        <div class="post-gravatar">
+                                            <img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/chachabulilit.jpg" alt="Chacha Bulilit" />
+                                        </div>
+                                        <div class="post-text">
+                                            <p class="status"><b><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/chacha-bulilit">Chacha Bulilit</a></b> <img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/extras/to.png" /> <b><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/miguel-de-guzman">Miguel De Guzman</a></b> Tulog na tayo. Sweet Dreams&#8230;</p>
+                                            <div id="responses">
+                                                <div id="responselist">
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/migueldeguzman.jpg" alt="Miguel De Guzman" title="Miguel De Guzman" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/miguel-de-guzman">Miguel De Guzman</a></div>
+                                                            <div class="rc-content"> Gusto mo ng matulog para mapanaginipan mo ako noh?</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/chachabulilit.jpg" alt="Chacha Bulilit" title="Chacha Bulilit" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/chacha-bulilit">Chacha Bulilit</a></div>
+                                                            <div class="rc-content"> Dati yun. Ngayon, hindi na.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/migueldeguzman.jpg" alt="Miguel De Guzman" title="Miguel De Guzman" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/miguel-de-guzman">Miguel De Guzman</a></div>
+                                                            <div class="rc-content"> Huh?</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="index-response response">
+                                                        <div class="ic-avatar"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/chachabulilit.jpg" alt="Chacha Bulilit" title="Chacha Bulilit" width="37" height="37" class="alignleft" /></div>
+                                                        <div class="ic-text">
+                                                            <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/friends/chacha-bulilit">Chacha Bulilit</a></div>
+                                                            <div class="rc-content"> Mas gusto ko nang maaga gumising para makapiling ka.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wp_likes" id="wp_likes_post-4456">
+                                                <div class="text"><b>151</b> fans like this post.</div>
+                                                <div><a href=" javascript:wp_likes.like(4456)" class="like" title="like this post">Fan This!</a>&nbsp;<img class="loader" src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/wp-likes/images/spinner.gif" height="11px" alt="" /></div>
+                                            </div>
+                                            <div class="sociable"><span class="sociable-tagline">Share to the World:</span><ul><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.facebook.com/share.php?u=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fpagtulog-at-paggising%2F&amp;t=Pagtulog%20at%20Paggising"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/facebook.png" class="sociable-img" title="Facebook" alt="Facebook" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://twitter.com/home?status=Pagtulog%20at%20Paggising%20-%20http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fpagtulog-at-paggising%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/twitter.png" class="sociable-img" title="Twitter" alt="Twitter" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fpagtulog-at-paggising%2F&amp;t=Pagtulog%20at%20Paggising&amp;s=Chacha%20Bulilit%20%20Miguel%20De%20Guzman%20Tulog%20na%20tayo.%20Sweet%20Dreams...%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Gusto%20mo%20ng%20matulog%20para%20mapanaginipan%20mo%20ako%20noh%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D%0A%20Dati%20yun.%20Ngayon%2C%20hindi%20na.%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Huh%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/tumblr.png" class="sociable-img" title="Tumblr" alt="Tumblr" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.plurk.com/m?content=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fpagtulog-at-paggising%2F (Pagtulog%20at%20Paggising)&amp;qualifier=shares"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/plurk.png" class="sociable-img" title="Plurk" alt="Plurk" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://ping.fm/ref/?link=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fpagtulog-at-paggising%2F&amp;title=Pagtulog%20at%20Paggising&amp;body=Chacha%20Bulilit%20%20Miguel%20De%20Guzman%20Tulog%20na%20tayo.%20Sweet%20Dreams...%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Gusto%20mo%20ng%20matulog%20para%20mapanaginipan%20mo%20ako%20noh%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D%0A%20Dati%20yun.%20Ngayon%2C%20hindi%20na.%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Huh%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/ping.png" class="sociable-img" title="Ping.fm" alt="Ping.fm" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.friendfeed.com/share?title=Pagtulog%20at%20Paggising&amp;link=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fpagtulog-at-paggising%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/friendfeed.png" class="sociable-img" title="FriendFeed" alt="FriendFeed" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://posterous.com/share?linkto=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fpagtulog-at-paggising%2F&amp;title=Pagtulog%20at%20Paggising&amp;selection=Chacha%20Bulilit%20%20Miguel%20De%20Guzman%20Tulog%20na%20tayo.%20Sweet%20Dreams...%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Gusto%20mo%20ng%20matulog%20para%20mapanaginipan%20mo%20ako%20noh%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D%0A%20Dati%20yun.%20Ngayon%2C%20hindi%20na.%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Huh%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/posterous.png" class="sociable-img" title="Posterous" alt="Posterous" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fpagtulog-at-paggising%2F&amp;title=Pagtulog%20at%20Paggising&amp;annotation=Chacha%20Bulilit%20%20Miguel%20De%20Guzman%20Tulog%20na%20tayo.%20Sweet%20Dreams...%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Gusto%20mo%20ng%20matulog%20para%20mapanaginipan%20mo%20ako%20noh%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D%0A%20Dati%20yun.%20Ngayon%2C%20hindi%20na.%0D%0A%0D%0A%0D%0A%0D%0AMiguel%20De%20Guzman%0D%0A%20Huh%3F%0D%0A%0D%0A%0D%0A%0D%0AChacha%20Bulilit%0D"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/googlebookmark.png" class="sociable-img" title="Google Bookmarks" alt="Google Bookmarks" /></a></li><li><a rel="nofollow" href="https://web.archive.org/web/20120925183225/mailto:/?subject=Pagtulog%20at%20Paggising&amp;body=http%3A%2F%2Ffacebuko.com%2F2012%2F04%2F08%2Fpagtulog-at-paggising%2F"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.com/wp-content/plugins/sociable-30/images/default/16/email_link.png" class="sociable-img" title="email" alt="email" /></a></li></ul></div>			<div class="meta">
+                                                <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/2012/04/08/pagtulog-at-paggising/" class="perm" rel="bookmark">Pagtulog at Paggising</a> &#183;
+                                                8 April 2012 &#183;
+                                                <a href="https://web.archive.org/web/20120925183225/http://facebuko.com/2012/04/08/pagtulog-at-paggising/#respond" class="respondlink notajax" id="respondlink-4456">Comments</a>
+                                            </div>
+                                            <div class="commentcontainer">
+                                                <div class="index-comment">
+                                                    <div class="ic-avatar">
+                                                        <img alt="" src="https://web.archive.org/web/20120925183225im_/http://1.gravatar.com/avatar/56fd705807e9c0729fbe1609ed8a4ceb?s=37&amp;d=monsterid&amp;r=G" class="avatar avatar-37 photo" height="37" width="37" />
+                                                    </div>
+                                                    <div class="ic-text">
+                                                        <div class="ic-meta ic-author"><a href="https://web.archive.org/web/20120925183225/http://www.facebook.com/BestFPotiepot24" rel="external nofollow" class="url">jilapot</a></div>
+                                                        <div class="ic-content">naman! XD </div>
+                                                        <div class="ic-meta ic-date">12 June 12 at 11:45</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="index-comment"><textarea class="respondtext">Write a comment...</textarea></div>
+                                            <div id="commentform-4456" class="index-comment comment-form" style="display:none;">
+                                                <form action="https://web.archive.org/web/20120925183225/http://facebuko.com/wp-comments-post.php" method="post">
+                                                    <div class="form_input">
+                                                        <input class="author focus" name="author" type="text" />
+                                                        <label for="author">Name</label>
+                                                    </div>
+                                                    <div class="form_input">
+                                                        <input class="email" name="email" type="text" />
+                                                        <label for="email">Email (<a href="https://web.archive.org/web/20120925183225/http://en.gravatar.com/">Gravatar</a> enabled)</label>
+                                                    </div>
+                                                    <div class="form_input">
+                                                        <input class="url" name="url" type="text" />
+                                                        <label for="url">Website</label>
+                                                    </div>
+                                                    <div class="form_comment">
+                                                        <textarea name="comment" class="focus "></textarea>
+                                                    </div>
+                                                    <div class="form_submit">
+                                                        <input type="submit" name="submit" value="Comment" class="submit" />
+                                                    </div>
+                                                    <input type="hidden" name="comment_post_ID" value="4456" />
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="navigation">
+                                    <div class="next"><a href="https://web.archive.org/web/20120925183225/http://facebuko.com/page/2/" class="nextpost">Show Older Posts</a></div>
+                                    <div class="prev"></div>
+                                </div>
+
+                                <input type="hidden" name="title" value="Facebuko" />
+                            </div>
+
+                            <div class="nuffnangpost" id="nuffnang">
+                                <div class="post-gravatar">
+                                    <img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/uploads/avatars/facebuko.jpg" />
+                                </div>
+                                <div class="post-text">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div> <!--end of main -->
+
+
+                    <div id="sidebarright">
+
+                        <div class="clearfix">
+                            <div class="bukobuttons">
+                                <a href="https://web.archive.org/web/20120925183225/https://www.facebook.com/pages/the-jonas-roque-of-facebukocom/331622638959"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/themes/smells-like-facebook/images/love.gif" /></a>&nbsp;<a href="https://web.archive.org/web/20120925183225/https://www.facebook.com/pages/the-jonas-roque-of-facebukocom/331622638959"><img src="https://web.archive.org/web/20120925183225im_/http://facebuko.net/wp-content/themes/smells-like-facebook/images/provoke.gif" /></a>
+                            </div>
+                            <div>&nbsp;</div>
+                        </div>
+
+                        <ul>
+                        </ul>
+
+                    </div>
+
+
+                </div> <!--end of content-->
+
+
+            </div> <!--end of container-->
+
+            <div id="footer">
+                <div class="footnote">
+                    <div align="center">
+   
+
+                    </div>
+                </div>
+
+                <div class="footnote">
+                    <div style="float:left;">
+
+
+
+                        visits (with Ajax on) since July 13, 2009
+                    </div>
+                    <div style="float:right">
+
+                        <a href="https://web.archive.org/web/20120925183225/http://wordpress.org/" rel="generator">Wordpress</a>&nbsp;&middot;&nbsp;
+                        <a href="https://web.archive.org/web/20120925183225/http://nazieb.com/456/smells-like-facebook">Ainun Nazieb</a>&nbsp;&middot;&nbsp;
+
+                        <a href="https://web.archive.org/web/20120925183225/http://jonas.ph/" rel="me">Jonas Roque</a>
+                    </div>
+                </div> <!--end of footer-->
+
+            </div> <!--end of wrapper-->
+
+
+
+        </div> <!--end of one-->
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

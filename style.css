@@ -1,0 +1,1725 @@
+/*
+THEME NAME: Smells like Facebook
+THEME URI: http://wp.nazieb.com/smells-like-facebook/
+VERSION: 2.4
+AUTHOR: Ainun Nazieb
+AUTHOR URI: http://nazieb.com/
+DESCRIPTION: The exact Facebook clone theme for Wordpress. Based on Facebook profile page. 3 columns or 2 columns available. Advanced Javascript & AJAX effect just like on Facebook also available. Autogrow comment box.
+TAGS: white, blue, two-columns, three-columns, theme-options, fixed-width, light
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    outline: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    background: #fff url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/bodybg.gif) repeat-x scroll left top;
+}
+
+input[type=text],
+textarea {
+    color: #777777;
+    font-size: 11px;
+    padding: 3px;
+}
+
+input,
+textarea {
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+input[type=submit],
+input.submit {
+    background-color: #5F78AB;
+    border: 1px solid #888888;
+    border-color: #26446E #152F5F #0C2253;
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 #3E5A88;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 6px 4px;
+    text-align: center;
+}
+
+a {
+    color: #3B5998;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    background: url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/quote.png) no-repeat left top;
+    padding-left: 19px;
+    color: gray;
+}
+
+#wrapper {
+    width: 964px;
+    margin: 0 auto;
+}
+
+#menu {
+    background: transparent url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/menubar.png) no-repeat scroll left bottom;
+    float: left;
+    width: 964px;
+    font-size: 11px;
+}
+
+#logo {
+    float: left;
+    margin: 5px 0px 3px 3px;
+}
+
+#menu li {
+    float: left;
+    padding: 7px 0px 8px 0px;
+}
+
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+}
+
+#pagemenu {
+    margin-left: 5px;
+}
+
+#pagemenu a {
+    font-weight: bold;
+}
+
+#pagemenu a:hover {
+    background-color: #5C75AA;
+}
+
+#pagemenu ul {
+    position: absolute;
+    border: 1px solid #3B5998;
+    margin-top: 5px;
+    display: none;
+}
+
+div#menu ul#pagemenu li:hover ul,
+div#menu ul#pagemenu li:hover ul:hover {
+    display: block;
+}
+
+#pagemenu ul li {
+    float: none;
+    background-color: #fff;
+    padding: 2px 0px;
+}
+
+#pagemenu ul li a {
+    color: #3B5998;
+    font-weight: normal;
+    padding: 5px 20px;
+    display: block;
+}
+
+#pagemenu ul li a:hover {
+    color: #fff;
+}
+
+#menu #more {
+    float: right;
+}
+
+#moremenu {
+    float: right;
+}
+
+#moremenu li {
+    margin-right: 5px;
+}
+
+#moremenu li a:hover {
+    background-color: #5C75AA;
+}
+
+#moremenu ul {
+    position: absolute;
+    border: 1px solid #3B5998;
+    background: #fff;
+    margin-top: 5px;
+    display: none;
+}
+
+div#menu div#more ul#moremenu li:hover ul {
+    display: block;
+}
+
+#feedmenu li.feedli {
+    float: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#feedmenu li a {
+    color: #3B5998;
+    padding: 5px 20px;
+    display: block;
+}
+
+#feedmenu li a:hover {
+    color: #fff;
+}
+
+#search {
+    float: right;
+    margin-top: 4px;
+    margin-right: 12px;
+    margin-left: 5px;
+}
+
+#search-text {
+    float: left;
+    margin-right: 2px;
+}
+
+#search-submit {
+    float: left;
+}
+
+#sidebar,
+#title {
+    margin-top: 20px;
+}
+
+#title h1 {
+    font-size: 16px;
+    display: inline;
+}
+
+#title h1 a {
+    color: #000;
+}
+
+#desc {
+    display: inline;
+    font-size: 13px;
+}
+
+#categories {
+    margin-top: 11px;
+    margin-bottom: 45px;
+    z-index: 10;
+    position: relative;
+}
+
+#categories li {
+    text-transform: capitalize;
+    float: left;
+    background: #D8DFEA;
+    margin-left: 3px;
+}
+
+#categories li a {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 11px;
+    display: block;
+}
+
+#categories li a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #627AAD;
+}
+
+#categories .current-cat {
+    background: #fff;
+}
+
+#categories .current-cat a {
+    background: #fff;
+    color: #000;
+}
+
+#categories .current-cat a:hover {
+    background: #fff;
+    color: #000;
+}
+
+#categories #plus {
+    background: url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/plus.gif) no-repeat top left;
+    z-index: 999999;
+    /*	position:relative;
+	display: block; */
+}
+
+#categories #plus:hover,
+#categories #plus.hover {
+    background: #627AAD url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/plus.gif) no-repeat left -25px;
+}
+
+#hiddencats {
+    width: 100px;
+    z-index: 10000;
+    left: -3px;
+    position: relative;
+    top: -28px;
+}
+
+#hiddencats li {
+    padding: 0px;
+    /*	padding: 8px 5px 4px 8px; */
+    background: #eee;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    float: none;
+    margin-left: 0px;
+}
+
+#hiddencats li.browsecat {
+    background: #fff;
+    border: 1px solid #000;
+    border-left: 1px solid #fff;
+    border-bottom: none;
+    padding: 8px;
+    width: 150px;
+    color: #666;
+}
+
+#hiddencats li a {
+    font-weight: normal;
+    font-size: 11px;
+    padding: 7px 12px;
+}
+
+#hiddencats li a:hover {
+    background: #899BC1;
+}
+
+#hiddencats .current-cat {
+    background: #eee;
+}
+
+#hiddencats .current-cat a {
+    background: #eee;
+    color: #3B5998;
+}
+
+#hiddencats .current-cat a:hover {
+    background: #899BC1;
+    color: #fff;
+}
+
+#hiddencats ul {
+    border-bottom: 1px solid #000;
+}
+
+#hiddenleft {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    border-right: none;
+    position: absolute;
+    background: #fff;
+    padding: 2px;
+}
+
+#hiddenplus {
+    background: #627AAD url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/plus.gif) no-repeat left -25px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+#hiddenright {
+    position: absolute;
+    margin-left: 30px;
+}
+
+#content {
+    float: right;
+    width: 740px;
+}
+
+.post {
+    /*	clear: both;*/
+    float: left;
+    border-top: 1px solid #D8DFEA;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 8px;
+}
+
+.nuffnangpost {
+    /*	clear: both;*/
+    float: left;
+    border-top: 1px solid #D8DFEA;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 8px;
+}
+
+.post-gravatar {
+    float: left;
+    margin-right: 10px;
+}
+
+.post-text {
+    float: right;
+    width: 680px;
+}
+
+.post-text label input {
+    border: 1px solid #BDC7D8;
+    margin-bottom: 3px;
+    color: #777777;
+    font-size: 11px;
+    padding: 3px;
+    text-align: left;
+    background: #fff;
+}
+
+.post .title {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.post p {
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+
+.post-text ul li {
+    margin-left: 15px;
+    list-style-type: disc;
+}
+
+.post ol {
+    margin-left: 20px;
+    list-style: decimal;
+}
+
+.post ul,
+.post ol,
+.post li {
+    margin-bottom: 10px;
+}
+
+.post ul ul,
+.post ol ol {
+    margin-top: 10px;
+}
+
+/*
+.post .meta, .post .post-meta {
+	color: #777;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+*/
+
+.post-meta {
+    border-top: 1px solid #DDDDDD;
+    padding-top: 3px;
+}
+
+.navigation {
+    background: #ECEFF5 none repeat scroll 0 0;
+    border-top: 1px solid #D8DFEA;
+    margin-top: 8px;
+    padding: 3px 7px 4px 0;
+    float: left;
+    width: 100%;
+}
+
+.next {
+    margin-left: 52px;
+    float: left;
+}
+
+.prev {
+    margin-right: 52px;
+    float: right;
+}
+
+#sidebar {
+    float: left;
+    width: 200px;
+}
+
+.large-avatar {
+    margin-bottom: 10px;
+}
+
+.user-desc {
+    border: 1px solid #D8DFEA;
+    color: #333333;
+    margin-bottom: 20px;
+    padding: 7px;
+}
+
+#sidebar .widget {
+    border-top: 1px solid #94A3C4;
+    padding-bottom: 10px;
+    border-right: 1px solid #D8DFEA;
+    background-color: #FFFFFF;
+}
+
+#sidebar .widgettitle {
+    background: #ECEFF5 none repeat scroll 0 0;
+    border-top: 0 none;
+    display: block;
+    font-size: 11px;
+    margin-bottom: 5px;
+    padding: 5px 8px;
+}
+
+#sidebar .widgettitle a {
+    text-decoration: none;
+    color: #000;
+}
+
+#sidebar .widgettitle img {
+    display: none;
+}
+
+#sidebar .widget ul {
+    padding: 0px 7px 10px 8px;
+}
+
+#sidebar .widget li {
+    margin-top: 5px;
+}
+
+.index-comment {
+    background: #ECEFF5;
+    width: 360px;
+    float: left;
+    clear: both;
+    margin-top: 2px;
+    padding: 7px;
+}
+
+.index-response {
+    background: #ECEFF5;
+    width: 360px;
+    float: left;
+    clear: both;
+    margin-top: 2px;
+    padding: 7px;
+}
+
+.index-horoscope {
+    width: 500px;
+    float: left;
+    clear: both;
+    margin-top: 2px;
+    padding-bottom: 10px;
+}
+
+.morecomments {
+    background: #ECEFF5 url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/comment.gif) no-repeat scroll 7px 7px;
+}
+
+.morecomments a {
+    margin-left: 18px;
+}
+
+#spacer {
+    margin: 0px;
+    padding: 0px;
+    width: 1px;
+    height: 10px;
+    background: red;
+}
+
+#responses {
+    margin: 0px;
+    padding: 0px;
+}
+
+.commentcontainer {
+    margin: 0px;
+    padding: 0px;
+}
+
+.meta {
+    background: #ECEFF5 url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/post.png) no-repeat scroll 7px 7px;
+    float: left;
+    clear: both;
+    padding: 7px;
+    margin: 2px 0px 0px 0px;
+    width: 360px;
+    /*
+	background: url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/likes.gif) no-repeat;
+	color: #777;
+	float: left;
+	padding-left: 7px;
+	padding-right: 7px;
+	margin: 0px 0px 0px 7px;	
+	*/
+}
+
+.meta a.perm {
+    margin-left: 18px;
+}
+
+.post-cat,
+.post-tag {
+    background: #ECEFF5;
+    float: left;
+    clear: both;
+    padding: 7px;
+    margin: 2px 0px 0px 0px;
+    width: 360px;
+}
+
+
+.ic-avatar {
+    float: left;
+}
+
+.ic-zodiac {
+    float: left;
+}
+
+.ic-text {
+    width: 315px;
+    float: right;
+}
+
+.ic-zen {
+    width: 370px;
+    float: right;
+}
+
+.ic-zang {
+    width: 400px;
+    float: right;
+}
+
+.ic-meta {
+    margin-bottom: 3px;
+}
+
+.ic-author {
+    font-weight: bold;
+    display: inline;
+}
+
+.ic-content,
+.comment p,
+.response p,
+.horoscope p {
+    display: inline;
+}
+
+.rc-content {
+    display: block;
+}
+
+
+.ic-date {
+    color: #777;
+    margin-top: 2px;
+}
+
+.comment-form input[type=text],
+#comment_form input[type=text],
+.comment-form textarea,
+#comment_form textarea {
+    border: 1px solid #BDC7D8;
+    margin-bottom: 3px;
+}
+
+.comment-form textarea,
+#comment_form textarea {
+    width: 352px;
+}
+
+.comment-form textarea.commenttextright,
+#comment_form textarea.commenttextright {
+    height: 30px;
+    margin-left: 5px;
+    width: 310px;
+}
+
+.form_submit_right {
+    text-align: right;
+}
+
+textarea.respondtext {
+    border: 1px solid #BDC7D8;
+    height: 14px;
+    width: 352px;
+}
+
+#footer {
+    color: #666;
+    border-top: 1px solid #DDDDDD;
+    clear: both;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    text-align: right;
+    width: 100%;
+}
+
+.archive {
+    background: #F7F7F7 none repeat scroll 0 0;
+    border-bottom: 1px solid #D8DFEA;
+    border-top: 1px solid #3B5998;
+    padding: 4px 6px 5px;
+    color: #333333;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.nofloat {
+    float: none;
+    width: 100%;
+}
+
+/* Wordpress requirement */
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.wp-caption {
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #f3f3f3;
+    padding-top: 4px;
+    margin: 10px;
+}
+
+.wp-caption img {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    padding: 0 4px 5px;
+    margin: 0;
+}
+
+.notes-left img {
+    border: 1px solid #DDDDDD;
+    padding: 2px;
+    float: left;
+    margin-right: 5px;
+}
+
+.notes-right img {
+    border: 1px solid #DDDDDD;
+    padding: 2px;
+    float: right;
+    margin-left: 5px;
+}
+
+#friends1,
+#friends2 {
+    margin: 0;
+    padding: 0;
+}
+
+#leftie {
+    float: left;
+    width: 66px;
+    margin: 0;
+    padding: 0;
+}
+
+#rightie {
+    float: right;
+    width: 66px;
+    margin: 0;
+    padding: 0;
+}
+
+#midlet {
+    margin: 0 67px;
+}
+
+.column-in {
+    margin: 0;
+    padding: 0;
+}
+
+.cleaner {
+    clear: both;
+    height: 1px;
+    font-size: 1px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+p.status {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+div.forfriends {
+    height: 55px;
+    display: block
+}
+
+h2.entry-title {
+    border-bottom: #ddd 1px solid;
+}
+
+p.friendname {
+    margin-bottom: 10px;
+    margin-left: 55px;
+    font-size: 13px;
+}
+
+/* Gallery Styles */
+
+#motioncontainer {
+    /*margin:0 auto;  Uncomment this line if you wish to center the gallery on page */
+    width: 500px;
+    /* Set to gallery width, in px or percentage */
+    height: 440px;
+    /* Set to gallery height */
+}
+
+#motioncontainer a img {
+    /*border: 1px solid #cccccc;*/
+    /* Set image border color */
+}
+
+#motioncontainer a:hover img {
+    /*border: 1px solid navy; */
+    /* Set image border hover color */
+}
+
+#statusdiv {
+    /*background-color: lightyellow;
+border: 1px solid gray;*/
+    padding: 0px;
+    position: absolute;
+    /* Stop Editing Gallery Styles */
+    left: -300px;
+    visibility: hidden;
+}
+
+#motioncontainer a:hover {
+    color: red;
+    /* Dummy definition to overcome IE bug */
+}
+
+/* End Gallery Styles */
+
+/* CSS-based Image Maps
+   Author: Frank Manno
+   Version: Nov. 25, 2004
+----------------------------------------------- */
+
+/* ---------- hidden ONLY if CSS is enabled.  If disabled, image is rendered ---------- */
+img.image {
+    display: none;
+}
+
+dl#lolCatMap {
+    margin: 0;
+    padding: 0;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) top left no-repeat;
+    height: 602px;
+    width: 536px;
+    position: relative;
+}
+
+dt {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-size: 85%;
+    display: none;
+}
+
+dd {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-size: 85%;
+}
+
+/* ---------- Hotspot Declarations ---------- */
+dd#jokerDef {
+    top: 302px;
+    left: 381px;
+}
+
+dd#jokerDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#jokerDef a span {
+    display: none;
+}
+
+dd#jokerDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -381px -904px no-repeat;
+}
+
+dd#jokerDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#emoDef {
+    top: 116px;
+    left: 154px;
+}
+
+dd#emoDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#emoDef a span {
+    display: none;
+}
+
+dd#emoDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -154px -718px no-repeat;
+}
+
+dd#emoDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#internetAddictDef {
+    top: 409px;
+    left: 4px;
+}
+
+dd#internetAddictDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#internetAddictDef a span {
+    display: none;
+}
+
+dd#internetAddictDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -4px -1011px no-repeat;
+}
+
+dd#internetAddictDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#religiousDef {
+    top: 505px;
+    left: 231px;
+}
+
+dd#religiousDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#religiousDef a span {
+    display: none;
+}
+
+dd#religiousDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -231px -1107px no-repeat;
+}
+
+dd#religiousDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#ladiesManDef {
+    top: 504px;
+    left: 4px;
+}
+
+dd#ladiesManDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#ladiesManDef a span {
+    display: none;
+}
+
+dd#ladiesManDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -4px -1106px no-repeat;
+}
+
+dd#ladiesManDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#toughGuyDef {
+    top: 208px;
+    left: 155px;
+}
+
+dd#toughGuyDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#toughGuyDef a span {
+    display: none;
+}
+
+dd#toughGuyDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -155px -810px no-repeat;
+}
+
+dd#toughGuyDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#motherDef {
+    top: 108px;
+    left: 462px;
+}
+
+dd#motherDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#motherDef a span {
+    display: none;
+}
+
+dd#motherDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -462px -710px no-repeat;
+}
+
+dd#motherDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#stylishDef {
+    top: 7px;
+    left: 82px;
+}
+
+dd#stylishDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#stylishDef a span {
+    display: none;
+}
+
+dd#stylishDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -82px -609px no-repeat;
+}
+
+dd#stylishDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#talkerDef {
+    top: 206px;
+    left: 80px;
+}
+
+dd#talkerDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#talkerDef a span {
+    display: none;
+}
+
+dd#talkerDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -80px -808px no-repeat;
+}
+
+dd#talkerDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#rockerDef {
+    top: 206px;
+    left: 231px;
+}
+
+dd#rockerDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#rockerDef a span {
+    display: none;
+}
+
+dd#rockerDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -231px -808px no-repeat;
+}
+
+dd#rockerDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#beerHogDef {
+    top: 400px;
+    left: 231px;
+}
+
+dd#beerHogDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#beerHogDef a span {
+    display: none;
+}
+
+dd#beerHogDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -231px -1002px no-repeat;
+}
+
+dd#beerHogDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#tooCuteDef {
+    top: 409px;
+    left: 80px;
+}
+
+dd#tooCuteDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#tooCuteDef a span {
+    display: none;
+}
+
+dd#tooCuteDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -80px -1011px no-repeat;
+}
+
+dd#tooCuteDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#dramaticDef {
+    top: 308px;
+    left: 461px;
+}
+
+dd#dramaticDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#dramaticDef a span {
+    display: none;
+}
+
+dd#dramaticDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -461px -910px no-repeat;
+}
+
+dd#dramaticDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#badAssDef {
+    top: 108px;
+    left: 231px;
+}
+
+dd#badAssDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#badAssDef a span {
+    display: none;
+}
+
+dd#badAssDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -231px -710px no-repeat;
+}
+
+dd#badAssDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#bffDef {
+    top: 6px;
+    left: 4px;
+}
+
+dd#bffDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#bffDef a span {
+    display: none;
+}
+
+dd#bffDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -4px -608px no-repeat;
+}
+
+dd#bffDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#impatientDef {
+    top: 6px;
+    left: 388px;
+}
+
+dd#impatientDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#impatientDef a span {
+    display: none;
+}
+
+dd#impatientDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -388px -608px no-repeat;
+}
+
+dd#impatientDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#clownDef {
+    top: 15px;
+    left: 311px;
+}
+
+dd#clownDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#clownDef a span {
+    display: none;
+}
+
+dd#clownDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -311px -617px no-repeat;
+}
+
+dd#clownDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#easilyConfusedDef {
+    top: 5px;
+    left: 156px;
+}
+
+dd#easilyConfusedDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#easilyConfusedDef a span {
+    display: none;
+}
+
+dd#easilyConfusedDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -156px -607px no-repeat;
+}
+
+dd#easilyConfusedDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#troubleDef {
+    top: 311px;
+    left: 5px;
+}
+
+dd#troubleDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#troubleDef a span {
+    display: none;
+}
+
+dd#troubleDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -5px -913px no-repeat;
+}
+
+dd#troubleDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#sarcasticDef {
+    top: 204px;
+    left: 463px;
+}
+
+dd#sarcasticDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#sarcasticDef a span {
+    display: none;
+}
+
+dd#sarcasticDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -463px -806px no-repeat;
+}
+
+dd#sarcasticDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#princessDef {
+    top: 114px;
+    left: 5px;
+}
+
+dd#princessDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#princessDef a span {
+    display: none;
+}
+
+dd#princessDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -5px -716px no-repeat;
+}
+
+dd#princessDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#accidentProneDef {
+    top: 398px;
+    left: 462px;
+}
+
+dd#accidentProneDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#accidentProneDef a span {
+    display: none;
+}
+
+dd#accidentProneDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -462px -1000px no-repeat;
+}
+
+dd#accidentProneDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+dd#flirtyDef {
+    top: 215px;
+    left: 384px;
+}
+
+dd#flirtyDef a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+dd#flirtyDef a span {
+    display: none;
+}
+
+dd#flirtyDef a:hover {
+    position: absolute;
+    background: transparent url(https://web.archive.org/web/20100114065335im_/http://facebuko.net/wp-content/uploads/extras/lolcats3.jpg) -384px -817px no-repeat;
+}
+
+dd#flirtyDef a:hover span {
+    display: block;
+    text-indent: 0;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #3b5998;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid #d8dfea;
+    bottom: 100%;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+
+/*
+     FILE ARCHIVED ON 06:53:35 Jan 14, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:36:37 Apr 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 145.38
+  PetaboxLoader3.resolve: 73.757 (2)
+  esindex: 0.024
+  PetaboxLoader3.datanode: 123.706 (4)
+  load_resource: 132.096
+  exclusion.robots: 0.314
+  CDXLines.iter: 14.876 (3)
+  LoadShardBlock: 109.397 (3)
+  exclusion.robots.policy: 0.292
+  RedisCDXSource: 15.42
+*/
