@@ -1,0 +1,225 @@
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+body {
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    background: #fff url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/bodybg.gif) repeat-x scroll left top;
+}
+
+input[type=text],
+textarea {
+    color: #777777;
+    font-size: 11px;
+    padding: 3px;
+}
+
+input,
+textarea {
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+input[type=submit],
+input.submit {
+    background-color: #5F78AB;
+    border: 1px solid #888888;
+    border-color: #26446E #152F5F #0C2253;
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 #3E5A88;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 6px 4px;
+    text-align: center;
+}
+
+a {
+    color: #3B5998;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.post {
+    /*	clear: both;*/
+    float: left;
+    border-top: 1px solid #D8DFEA;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 8px;
+}
+
+.post-gravatar {
+    float: left;
+    margin-right: 10px;
+}
+
+.post-text {
+    float: right;
+    width: 680px;
+}
+
+p.status {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#responses {
+    margin: 0px;
+    padding: 0px;
+}
+
+.index-response {
+    background: #ECEFF5;
+    /* width: 360px; */
+    float: left;
+    clear: both;
+    margin-top: 2px;
+    padding: 7px;
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    outline: 0;
+}
+
+.index-comment {
+    background: #ECEFF5;
+    width: 360px;
+    float: left;
+    clear: both;
+    margin-top: 2px;
+    padding: 7px;
+}
+
+.ic-meta {
+    margin-bottom: 3px;
+}
+
+.ic-author {
+    font-weight: bold;
+    display: inline;
+}
+
+.rc-content {
+    display: block;
+}
+
+.ic-avatar {
+    float: left;
+}
+
+.ic-date {
+    color: #777;
+    margin-top: 2px;
+}
+
+.ic-text {
+    width: 315px;
+    float: right;
+}
+
+
+.wp_likes {
+    background: #ECEFF5 url(https://web.archive.org/web/20100405055931im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/likes.gif) no-repeat scroll 7px 7px;
+    float: left;
+    clear: both;
+    padding: 7px;
+    margin: 2px 0px 0px 0px;
+    width: 360px;
+}
+
+.wp_likes div.text {
+    float: left;
+    margin-left: 18px;
+    display: inline;
+}
+
+.wp_likes a.like {
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.wp_likes a.unlike {
+    padding-left: 2px;
+    background-image: none;
+    display: inline;
+}
+
+.wp_likes img.loader {
+    display: none;
+}
+
+.commentcontainer {
+    margin: 0px;
+    padding: 0px;
+}
+
+.meta {
+    background: #ECEFF5 url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/post.png) no-repeat scroll 7px 7px;
+    float: left;
+    clear: both;
+    padding: 7px;
+    margin: 2px 0px 0px 0px;
+    width: 360px;
+    /*
+        background: url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/likes.gif) no-repeat;
+        color: #777;
+        float: left;
+        padding-left: 7px;
+        padding-right: 7px;
+        margin: 0px 0px 0px 7px;
+        */
+}
+
+.meta a.perm {
+    margin-left: 18px;
+}
+
+
+
+.morecomments {
+    background: #ECEFF5 url(/web/20100114065335im_/http://facebuko.com/wp-content/themes/smells-like-facebook/images/comment.gif) no-repeat scroll 7px 7px;
+}
+
+.morecomments a {
+    margin-left: 18px;
+}
+
+
+/* comment area*/
+.comment-form input[type=text],
+#comment_form input[type=text],
+.comment-form textarea,
+#comment_form textarea {
+    border: 1px solid #BDC7D8;
+    margin-bottom: 3px;
+}
+
+.comment-form textarea,
+#comment_form textarea {
+    width: 352px;
+}
+
+.comment-form textarea.commenttextright,
+#comment_form textarea.commenttextright {
+    height: 30px;
+    margin-left: 5px;
+    width: 310px;
+}
+
+.form_submit_right {
+    text-align: right;
+}
+
+textarea.respondtext {
+    border: 1px solid #BDC7D8;
+    height: 14px;
+    width: 352px;
+}
